@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans&family=Titillium+Web:wght@300&display=swap');
+html, body{
+    width: 100%;
+    padding: 0;
+    background-color: #1a313f;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+    height: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+}
+
+article{
+    border: 2px solid rgb(145, 143, 143);
+    background-color: #c4b8b811;
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+h2{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h3{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+span{
+    color: #f47958;
+    text-align: center;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+}
+
+header img{
+    padding-top: 6%;
+    size: -5%;
+    animation: fade-in 1s ease-in;
+}
+
+footer{
+  text-align: center;
+  color: white;
+  background-color: #c4b8b811;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 15px;
+  animation: fade-in 1s ease-in;
+}
+
+  @keyframes bakgrunn {
+    1% {background-image: url("../img/blurred\ cropped\ 1.gif");}
+    50% {background-image: url("../img/blurred\ cropped\ 1.gif");}
+    51% {background-image: url("../img/blurred\ cropped\ 2.gif");}
+    100% {background-image: url("../img/blurred\ cropped\ 2.gif");}
+  }
+
+  @keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+
+  a{
+    text-decoration: underline;
+    color: whitesmoke;
+  }
+
+  a:hover {
+    color: rgba(245, 245, 245, 0.719);
+  }
+
+  .main{
+    text-align: center;
+    float: right;
+}
+
+.intro-tekst{
+    animation: fade-in 1s ease-in;
+}
+
+.tekst-space{
+  line-height: 30px;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+}
+
+.parallax {
+    /*lånt fra w3schools*/
+    background-image: url("../img/blurred\ cropped\ 1.gif");
+
+    min-height: 500px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    animation-name: bakgrunn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation: fade-in 1s ease-in;
+  }
+
+  .container {
+    height: 600px;
+    
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: fade-in 1s ease-in;
+  }
+
+  .container-1 {
+    height: 600px;
+    width: 66%;
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container-1 article {
+    height: 300px;
+  }
+
+  .bred {
+    width: 97.6%;
+  }
+
+  .img-container {
+    height: 573px;
+  }
+
+  .img1 {
+    height: 550px;
+    width: auto;
+    padding-top: 15px;
+  }
